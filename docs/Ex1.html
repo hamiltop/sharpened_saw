@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+    <script type="text/javascript" charset="utf-8">
+      relpath = '';
+      if (relpath != '') relpath += '/';
+    </script>
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+  </head>
+
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <div id="content">
+      <div class="breadcrumbs">elixir_exercises v0.0.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Ex1.html">Ex1</a></div>
+
+      <h1>
+        Ex1
+        
+      </h1>
+
+      
+
+      <ul class="summary_links">
+        
+        
+          <li><a href="#summary">Summary</a></li>
+        
+        
+          <li><a href="#functions_details">Functions</a></li>
+        
+        
+        
+        
+      </ul>
+
+      
+        <div id="moduledoc" class="docstring">
+          <p>In this exercise we will learn some of the fundamentals of Elixir, including
+  pattern matching and recursion.</p>
+
+        </div>
+      
+
+      
+
+      
+
+      
+        <h2 id="summary">Summary<div class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></div></h2>
+        <table class="summary">
+          <tr>
+  <td class="summary_signature"><a href="#factorial/1">factorial(n)</a></td>
+  
+    <td class="summary_synopsis"><p>Return the factorial of n</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#fibonacci/1">fibonacci(n)</a></td>
+  
+    <td class="summary_synopsis"><p>Return the nth number in the fibonacci sequence.
+  The fibonacci sequence is defined as:
+  fibonacci(0) = 1
+  fibonacci(1) = 1
+  fibonacci(n) = fibonacci(n - 1) + fibonacci(n - 2)</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#first_class_functions/2">first_class_functions(fun1, fun2)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns a function that takes 1 argument. It should apply fun1 to the argument and then apply
+  fun2 to the argument</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#pattern_matching/1">pattern_matching(spice)</a></td>
+  
+    <td class="summary_synopsis"><p>Calls Support.spice with the passed in spice and processes the response
+  Support.spice returns a variety of responses, but this function behaves as follows:</p>
+</td>
+  
+</tr>
+
+        </table>
+      
+
+      
+
+      
+        <div id="functions_details" class="details_list">
+          <h2>Functions</h2>
+          <div class="detail">
+  <div class="detail_header" id="factorial/1">
+    <span class="signature"><strong>factorial(n)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#factorial/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Return the factorial of n</p>
+
+<p>This should be Tail Call Optimized</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="fibonacci/1">
+    <span class="signature"><strong>fibonacci(n)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#fibonacci/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Return the nth number in the fibonacci sequence.
+  The fibonacci sequence is defined as:
+  fibonacci(0) = 1
+  fibonacci(1) = 1
+  fibonacci(n) = fibonacci(n - 1) + fibonacci(n - 2)</p>
+
+<p>The solution should be Tail Call Optimized</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="first_class_functions/2">
+    <span class="signature"><strong>first_class_functions(fun1, fun2)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#first_class_functions/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Returns a function that takes 1 argument. It should apply fun1 to the argument and then apply
+  fun2 to the argument.</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="pattern_matching/1">
+    <span class="signature"><strong>pattern_matching(spice)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#pattern_matching/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Calls Support.spice with the passed in spice and processes the response
+  Support.spice returns a variety of responses, but this function behaves as follows:</p>
+
+<ul>
+<li>If the response is an integer, return the square of the integer</li>
+<li>If the response is a tuple in the form {:ok, value} return the value</li>
+<li>If the response is a tuple in another form, return the tuple</li>
+<li>If the response matches the spice, return the spice</li>
+<li>If the response is anything else, return :error</li>
+</ul>
+</div>
+  
+</div>
+
+        </div>
+      
+
+      
+
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ex2</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+    <script type="text/javascript" charset="utf-8">
+      relpath = '';
+      if (relpath != '') relpath += '/';
+    </script>
+
+    <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+  </head>
+
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <div id="content">
+      <div class="breadcrumbs">elixir_exercises v0.0.1 &rarr; <a href="overview.html">Overview</a> &rarr; <a href="Ex2.html">Ex2</a></div>
+
+      <h1>
+        Ex2
+        
+      </h1>
+
+      
+
+      <ul class="summary_links">
+        
+        
+          <li><a href="#summary">Summary</a></li>
+        
+        
+          <li><a href="#functions_details">Functions</a></li>
+        
+        
+        
+        
+      </ul>
+
+      
+        <div id="moduledoc" class="docstring">
+          <p>In this exercise we will learn some how to build and use basic functional constructs
+  such as map and reduce.</p>
+
+        </div>
+      
+
+      
+
+      
+
+      
+        <h2 id="summary">Summary<div class="detail_header_links"><a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a></div></h2>
+        <table class="summary">
+          <tr>
+  <td class="summary_signature"><a href="#all?/2">all?(list, fun)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns true if all elements cause the supplied function to return true</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#any?/2">any?(list, fun)</a></td>
+  
+    <td class="summary_synopsis"><p>Returns true if at least one element causes the supplied function to return true</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#filter/2">filter(list, fun)</a></td>
+  
+    <td class="summary_synopsis"><p>Return all elements in list for which the given function returns true</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#map/2">map(list, fun)</a></td>
+  
+    <td class="summary_synopsis"><p>Apply the given function to each element of the list and return the resulting list</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#reduce/3">reduce(list, accumulator, fun)</a></td>
+  
+    <td class="summary_synopsis"><p>Apply the given function to element of the list along with an accumulator value. Return
+  accumulator after all elements have been processed. The function requires arguments in the
+  form (element, accumulator)</p>
+</td>
+  
+</tr>
+<tr>
+  <td class="summary_signature"><a href="#sort/1">sort(list)</a></td>
+  
+    <td class="summary_synopsis"><p>Sorts the given array using the quicksort algorithm. The quicksort algorithm is a recursive
+  algorithm where a pivot element is chosen and all remaining elements are partition based on
+  whether they are greater than or less than the pivot element. Each partition is then sorted</p>
+</td>
+  
+</tr>
+
+        </table>
+      
+
+      
+
+      
+        <div id="functions_details" class="details_list">
+          <h2>Functions</h2>
+          <div class="detail">
+  <div class="detail_header" id="all?/2">
+    <span class="signature"><strong>all?(list, fun)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#all?/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Returns true if all elements cause the supplied function to return true</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="any?/2">
+    <span class="signature"><strong>any?(list, fun)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#any?/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Returns true if at least one element causes the supplied function to return true</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="filter/2">
+    <span class="signature"><strong>filter(list, fun)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#filter/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Return all elements in list for which the given function returns true</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="map/2">
+    <span class="signature"><strong>map(list, fun)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#map/2" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Apply the given function to each element of the list and return the resulting list</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="reduce/3">
+    <span class="signature"><strong>reduce(list, accumulator, fun)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#reduce/3" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Apply the given function to element of the list along with an accumulator value. Return
+  accumulator after all elements have been processed. The function requires arguments in the
+  form (element, accumulator)</p>
+</div>
+  
+</div>
+<div class="detail">
+  <div class="detail_header" id="sort/1">
+    <span class="signature"><strong>sort(list)</strong></span>
+    <div class="detail_header_links">
+      <span class="detail_type">(function)</span>
+      <a href="#sort/1" class="detail_link" title="Link to this function">#</a>
+      <a class="to_top_link" href="#content" title="To the top of the page">&uarr;</a>
+    </div>
+  </div>
+  
+  <div class="docstring"><p>Sorts the given array using the quicksort algorithm. The quicksort algorithm is a recursive
+  algorithm where a pivot element is chosen and all remaining elements are partition based on
+  whether they are greater than or less than the pivot element. Each partition is then sorted.</p>
+
+<p>The solutions should leverage list comprehensions.</p>
+</div>
+  
+</div>
+
+        </div>
+      
+
+      
+
+      
+    </div>
+  </body>
+</html>

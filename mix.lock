@@ -1,0 +1,2 @@
+%{"ex_doc": {:git, "git://github.com/elixir-lang/ex_doc.git", "fc0f00d2ff3c5e20eaee519b937f6feb998aa0d0", []},
+  "xgen": {:git, "git://github.com/josevalim/xgen.git", "0aab523f55dbd2811f44dfe594b600d233b88bc1", []}}
